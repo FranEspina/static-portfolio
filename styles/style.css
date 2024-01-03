@@ -610,7 +610,7 @@ footer .bottom .links a{
     @media screen and (max-width: 490px){
 
         nav{
-            padding: 20px 15px;
+            padding: 0px 15px;
         }
 
         nav ul{
@@ -631,7 +631,7 @@ footer .bottom .links a{
         }
 
         .main {
-            padding: 0px 15px;
+            padding: 20px 15px;
         }
 
         .main .left h3{
@@ -651,7 +651,7 @@ footer .bottom .links a{
         }
 
         .skills {
-            padding: 85px 15px;
+            padding: 45px 15px;
         }
 
         .skills h3{
@@ -663,30 +663,30 @@ footer .bottom .links a{
         }
 
         .about {
-            padding: 85px 15px;
+            padding: 45px 15px;
         }
 
-        .about h3{
+        .about .right h3{
             font-size: 24px;
         }
 
-        .about h5{
+        .about .right h5{
             font-size: 16px;
         }
 
-        .about p{
+        .about .right p{
             font-size: 14px;
         }
 
         .portfolio {
-            padding: 85px 15px;
+            padding: 45px 15px;
         }
 
-        .portfolio h3{
+        .portfolio .header h3{
             font-size: 24px;
         }
 
-        .portfolio h5{
+        .portfolio .header h5{
             font-size: 16px;
         }
 
@@ -699,7 +699,7 @@ footer .bottom .links a{
         }
 
         .feedback {
-            padding: 85px 15px;
+            padding: 45px 15px;
         }
 
         .feedback h3{
