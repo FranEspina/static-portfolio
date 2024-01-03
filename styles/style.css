@@ -525,7 +525,7 @@ footer .bottom .links a{
         }
 
         .main{
-            padding: 42px;
+            padding: 20px 42px;
         }
 
         .skills{
@@ -610,7 +610,7 @@ footer .bottom .links a{
     @media screen and (max-width: 490px){
 
         nav{
-            padding: 0 15px;
+            padding: 20px 15px;
         }
 
         nav ul{
@@ -631,7 +631,7 @@ footer .bottom .links a{
         }
 
         .main {
-            padding: 85px 15px;
+            padding: 0px 15px;
         }
 
         .main .left h3{
