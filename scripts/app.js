@@ -14,7 +14,13 @@ function updateSize() {
 function openMenu(){
     const nav = document.querySelector('nav');
     nav.classList.toggle('open');
+}
 
+function hideMenu(){
+  const nav = document.querySelector('nav');
+  if (nav.classList.contains('open')){
+    nav.classList.toggle('open');
+  }
 }
 
 // Llamar a la función cuando se carga la página

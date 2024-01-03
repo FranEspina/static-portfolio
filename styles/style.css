@@ -480,7 +480,7 @@ footer .bottom .links a{
         }
 
         .about{
-            flex-direction: column;
+            flex-direction: column-reverse;
             justify-content: center;
         }
 
@@ -631,7 +631,7 @@ footer .bottom .links a{
         }
 
         .main {
-            padding: 15px;
+            padding: 85px 15px;
         }
 
         .main .left h3{
@@ -651,7 +651,7 @@ footer .bottom .links a{
         }
 
         .skills {
-            padding: 15px;
+            padding: 85px 15px;
         }
 
         .skills h3{
@@ -663,7 +663,7 @@ footer .bottom .links a{
         }
 
         .about {
-            padding: 15px;
+            padding: 85px 15px;
         }
 
         .about h3{
@@ -679,7 +679,7 @@ footer .bottom .links a{
         }
 
         .portfolio {
-            padding: 15px;
+            padding: 85px 15px;
         }
 
         .portfolio h3{
@@ -699,7 +699,7 @@ footer .bottom .links a{
         }
 
         .feedback {
-            padding: 15px;
+            padding: 85px 15px;
         }
 
         .feedback h3{
