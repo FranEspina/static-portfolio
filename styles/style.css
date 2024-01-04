@@ -205,7 +205,7 @@ nav button#menuButton{
 }
 
 .main .left p{
-    color: #var(--text-accent-color);
+    color: var(--text-accent-color);
     font-size: 22px;
     margin-top: 20px;
 }
@@ -284,7 +284,7 @@ nav button#menuButton{
     margin-top: 20px;
     font-size: 14px;
     line-height: 22px;
-    color: #var(--text-accent-color);
+    color: var(--text-accent-color);
 }
 
 .about{
@@ -297,7 +297,10 @@ nav button#menuButton{
 
 .about .left img{
     width: 440px;
+}
 
+.about .right p{
+    margin-top: 20px;
 }
 
 .portfolio{
