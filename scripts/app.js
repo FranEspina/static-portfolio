@@ -39,4 +39,5 @@ switchMode.addEventListener("click", e => {
   }else{
     document.documentElement.setAttribute("data-theme", "light")
   }
+  hideMenu();
 });
