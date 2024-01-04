@@ -7,8 +7,50 @@
     display: none
 }
 
+:root{
+    --primary-color: #deebee;
+    --secondary-color: #fff;
+    --text-color: #0f172a;
+    --text-secondary-color: #006b6a;
+    --text-accent-color: #1c1e53;
+    --accent-color: #5e3bee;
+    --accent-secondary-color: #ff0000;
+    --accent-text-color: #fff;
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --transition: 0.2s ease-in-out;
+    color-scheme: light;
+}
+
+/* @media (prefers-color-scheme: dark){ */
+:root[data-theme="dark"]{
+    --primary-color: #0f172a;
+    --secondary-color: #243043;
+    --text-color: #deebee;
+    --text-secondary-color: #deebee;
+    --text-accent-color: #deebee;
+    --accent-color: #5e3bee;
+    --accent-secondary-color: #ff0000;
+    --accent-text-color: #fff;
+    --shadow-color: rgba(255, 255, 255, 0.15);
+    color-scheme: dark;
+}    
+
+form{
+    color-scheme: light;
+}
+
+* {
+    transition: background-color var(--transition) box-shadow var(--transition) ;
+}
+
+svg {
+    transition: color var(--transition);
+}
+
+
 html{
     scroll-behavior: smooth;
+    color: var(--text-color)
 }
 
 *{
@@ -21,12 +63,12 @@ html{
 
 a{
     text-decoration: none;
-    color: #1c1e53;
+    color: var(--text-accent-color);
     transition: color 0.3s ease;
 }
 
 a:hover{
-    color: #5e3bee !important;
+    color: var(--accent-color) !important;
 }
 
 h5{
@@ -38,7 +80,7 @@ li{
 }
 
 nav{
-    background-color: #fff;
+    background-color: var(--secondary-color);
     position: sticky;
     top: 0;
     padding: 0 85px;
@@ -46,7 +88,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 80px var(--shadow-color);
 }
 
 nav .logo, 
@@ -77,19 +119,19 @@ footer  .top ul{
 }
 
 nav button{
-    color: #1c1e53;
+    color: var(--text-accent-color);
     background-color: transparent;
     padding: 12px 16px;
     border-radius: 5px;
-    border: 1px solid #1c1e53;
+    border: 1px solid var(--text-accent-color);
     cursor: pointer;
     transition: all 0.3 ease;
 }
 
 nav button:hover{
-    border-color: #5e3bee;
-    background-color: #5e3bee;
-    color: #fff;
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
 }
 
 nav button#menuButton{
@@ -98,10 +140,46 @@ nav button#menuButton{
     justify-content: center;
     font-size: 24px;
     padding: 7px;
+    margin-left: 10px;
+}
+
+.switch{
+    width: 45px;
+    height: 20px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+    border-radius: 100px;
+    border: var(--accent-color) solid 2px;
+    background-color: var(--accent-color);
+}
+
+.switch i{
+    font-size: 0.85rem;
+    color: var(--accent-text-color);
+}
+
+.nav-options li:last-child::before{
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    border: var(--accent-color) solid 2px;
+    left: 0;
+    right: unset;
+}
+
+.nav-options li:last-child.active-dark::before{
+    left: unset;
+    right: 0;
 }
 
 .main{
-    background-color: #deebee;
+    background-color: var(--primary-color);
     padding: 90px 85px;
     display:flex;
     align-items: center;
@@ -123,11 +201,11 @@ nav button#menuButton{
 }
 
 .main .left h3 span{
-    color: #5e3bee;
+    color: var(--accent-color);
 }
 
 .main .left p{
-    color: #1c1e53;
+    color: #var(--text-accent-color);
     font-size: 22px;
     margin-top: 20px;
 }
@@ -135,8 +213,8 @@ nav button#menuButton{
 .main .left button{
     margin-top: 40px;
     cursor: pointer;
-    color: #fff;
-    background-color: #5e3bee;
+    color: var(--accent-text-color);
+    background-color: var(--accent-color);
     padding: 14px 24px;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -148,6 +226,7 @@ nav button#menuButton{
 
 .skills{
     padding: 110px 85px 0;
+    background-color: var(--secondary-color);
 }
 
 .skills h3, 
@@ -165,7 +244,7 @@ nav button#menuButton{
 }
 
 .skills .skill-items .item{
-    background-color: #deebee;
+    background-color: var(--primary-color);
     width: 25%;
     border-radius: 10px;
     padding: 32px;
@@ -175,24 +254,24 @@ nav button#menuButton{
 }
 
 .skills .skill-items .item:hover{
-    border-color: #5e3bee;
+    border-color: var(--accent-color);
 }
 
 .skills .skill-items .item .icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     width: 46px;
     height: 46px;
     border-radius: 10px;
     margin-bottom: 22px;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 16px var(--shadow-color);
 }
 
 .skills .skill-items .item .icon i{
     font-size: 26px;
-    color: #006b6a;
+    color: var(--text-secondary-color);
 }
 
 .skills .skill-items .item h4, 
@@ -205,11 +284,12 @@ nav button#menuButton{
     margin-top: 20px;
     font-size: 14px;
     line-height: 22px;
-    color: #1c1e53;
+    color: #var(--text-accent-color);
 }
 
 .about{
     padding: 110px;
+    background-color: var(--secondary-color);
     display: flex;
     align-items: center;
     gap: 60px;
@@ -221,7 +301,7 @@ nav button#menuButton{
 }
 
 .portfolio{
-    background-color: #deebee;
+    background-color: var(--primary-color);
     padding: 110px 85px;
 
 }
@@ -234,9 +314,9 @@ nav button#menuButton{
 }
 
 .portfolio .header button{
-    background-color: #ff0000 ;
+    background-color: var(--accent-secondary-color) ;
     padding: 10px 20px;
-    color: #fff;
+    color: var(--accent-text-color);
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -257,16 +337,16 @@ nav button#menuButton{
 
 .portfolio .portfolio-items .item{
     width: 30%;
-    background-color: #fff;
+    background-color: var(--secondary-color);
     border-radius: 10px;
     border-bottom: 4px solid transparent;
     cursor: pointer;
-    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 32px var(--shadow-color);
     transition: all 0.3s ease;
 }
 
 .portfolio .portfolio-items .item:hover{
-    border-color: #5e3bee;
+    border-color: var(--accent-color);
 }
 
 .portfolio  .portfolio-items .item img{
@@ -291,7 +371,7 @@ nav button#menuButton{
 .portfolio  .portfolio-items .info a{
     text-decoration: underline;
     text-underline-offset: 10px;
-    text-decoration-color: #5e3bee;
+    text-decoration-color: var(--accent-color);
 }
 
 .portfolio  .portfolio-items .info a i {
@@ -301,6 +381,7 @@ nav button#menuButton{
 
 .feedback{
     padding: 110px 85px;
+    background-color: var(--secondary-color);
 }
 
 .feedback .customers{
@@ -314,7 +395,7 @@ nav button#menuButton{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 2px solid #006b6a;
+    border: 2px solid var(--text-secondary-color);
     border-radius: 10px;
     padding: 30px;
     cursor: pointer;
@@ -322,12 +403,12 @@ nav button#menuButton{
 }
 
 .feedback .customers .item:hover{
-    border-color: #5e3bee;
+    border-color: var(--accent-color);
 
 }
 
 .feedback .customers .item .rating{
-    color: #006b6a;
+    color: var(--text-secondary-color);
     font-size: 22px;
 }
 
@@ -361,7 +442,7 @@ nav button#menuButton{
 }
 
 footer{
-    background-color: #deebee;
+    background-color: var(--primary-color);
     padding: 85px;
     display: flex; 
     flex-direction: column;
@@ -510,7 +591,7 @@ footer .bottom .links a{
 
     }
 
-    @media screen and (max-width: 736px) {
+    @media screen and (max-width: 770px) {
         nav{
             justify-content: space-between;
             padding: 0 42px;
@@ -541,7 +622,7 @@ footer .bottom .links a{
         }
 
         .portfolio{
-            padding: 60px 42px;
+            padding: 85px 42px;
         }
 
         .portfolio .portfolio-items{
@@ -610,6 +691,7 @@ footer .bottom .links a{
     @media screen and (max-width: 490px){
 
         nav{
+            height: 60px;
             padding: 0px 15px;
         }
 
@@ -622,12 +704,14 @@ footer .bottom .links a{
         }
 
         nav.open{
-            height: 200px;
+            height: 250px;
         }
 
         nav button#menuButton{
             align-self: flex-start;
-            margin: 20px 0px;
+            margin: 15px 0px;
+            width: 30px;
+            height: 30px;
         }
 
         .main {
@@ -651,7 +735,7 @@ footer .bottom .links a{
         }
 
         .skills {
-            padding: 45px 15px;
+            padding: 65px 15px;
         }
 
         .skills h3{
@@ -663,7 +747,7 @@ footer .bottom .links a{
         }
 
         .about {
-            padding: 45px 15px;
+            padding: 65px 15px;
         }
 
         .about .right h3{
@@ -679,7 +763,7 @@ footer .bottom .links a{
         }
 
         .portfolio {
-            padding: 45px 15px;
+            padding: 65px 15px;
         }
 
         .portfolio .header h3{
@@ -699,7 +783,7 @@ footer .bottom .links a{
         }
 
         .feedback {
-            padding: 45px 15px;
+            padding: 65px 15px;
         }
 
         .feedback h3{

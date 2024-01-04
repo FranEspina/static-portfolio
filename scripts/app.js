@@ -28,3 +28,15 @@ updateSize();
 
 // Llamar a la función cuando se cambia el tamaño de la ventana
 window.addEventListener("resize", updateSize);
+
+//Gestión del modo oscuro
+const switchMode = document.querySelector(".switch");
+switchMode.addEventListener("click", e => {
+  switchMode.classList.toggle("active-dark");
+
+  if(switchMode.classList.contains("active-dark")){
+    document.documentElement.setAttribute("data-theme", "dark")
+  }else{
+    document.documentElement.setAttribute("data-theme", "light")
+  }
+});
