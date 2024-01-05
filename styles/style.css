@@ -143,6 +143,10 @@ nav button#menuButton{
     margin-left: 10px;
 }
 
+nav button#contactButton{
+    display: none;
+}
+
 .switch{
     width: 45px;
     height: 20px;
@@ -610,10 +614,6 @@ footer .bottom .links a{
         .feedback .customers .item{
             width: 48%;
         }
-
-        /* footer .top ul{
-            display: none;
-        } */
 
     }
 
