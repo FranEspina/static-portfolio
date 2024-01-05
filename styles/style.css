@@ -218,6 +218,20 @@ nav button#menuButton{
     padding: 14px 24px;
     border: 1px solid transparent;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.main .left button a{
+    color: var(--accent-text-color);
+}
+
+.main .left button a:hover{
+    color: var(--accent-text-color) !important;
 }
 
 .main .right img{
@@ -234,6 +248,11 @@ nav button#menuButton{
 .portfolio .header h3, 
 .feedback h3{
     font-size: 40px;
+    margin-top: 20px;
+}
+
+.skills p{
+    font-size: 22px;
     margin-top: 20px;
 }
 
@@ -501,6 +520,10 @@ footer .bottom .links a{
         width: 380px;
     }
 
+    .skills p{
+        font-size: 18px;
+    }
+
     .skills .skill-items{
         gap: 10px;
         justify-content: space-between;
@@ -588,9 +611,9 @@ footer .bottom .links a{
             width: 48%;
         }
 
-        footer .top ul{
+        /* footer .top ul{
             display: none;
-        }
+        } */
 
     }
 
@@ -670,6 +693,10 @@ footer .bottom .links a{
             width: 100%;
         }
 
+        .skills p{
+            font-size: 16px;
+        }
+
         .skills .skill-items .item{
             width: 100%;
         }
@@ -733,6 +760,10 @@ footer .bottom .links a{
             font-size: 14px;
         }
 
+        .main .left button{
+            font-size: 14px;
+        }
+
         .main .right img{
             width: 350px;
         }
@@ -747,6 +778,10 @@ footer .bottom .links a{
 
         .skills h5{
             font-size: 16px;
+        }
+
+        .skills p{
+            font-size: 14px;
         }
 
         .about {
@@ -811,6 +846,10 @@ footer .bottom .links a{
 
         footer .top .social-links{
             font-size: 35px;
+        }
+
+        footer .top .logo a{
+            font-size: 13px;
         }
 
     }
