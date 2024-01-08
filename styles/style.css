@@ -551,6 +551,10 @@ footer .bottom .links a{
         font-size: 18px;
     }
 
+    .main .left .social-link{
+        font-size: 30px;
+    }
+
     .main .right img{
         width: 380px;
         height: auto;
@@ -721,6 +725,10 @@ footer .bottom .links a{
             font-size: 16px;
         }
 
+        .main .left .social-link{
+            font-size: 25px;
+        }
+
         .main .left button{
             width: 100%;
         }
@@ -790,6 +798,10 @@ footer .bottom .links a{
 
         .main .left p{
             font-size: 14px;
+        }
+
+        .main .left .social-link{
+            font-size: 24px;
         }
 
         .main .left button{
