@@ -214,7 +214,27 @@ nav button#contactButton{
     margin-top: 20px;
 }
 
-.main .left button{
+.main .left .contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.main .left .contact p{
+margin-top: 0px;
+}
+
+.main .left .social-link{
+    color: var(--accent-color);
+    font-size: 35px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.main .left  button{
     margin-top: 40px;
     cursor: pointer;
     color: var(--accent-text-color);
@@ -230,16 +250,19 @@ nav button#contactButton{
     font-size: 18px;
 }
 
+
 .main .left button a{
     color: var(--accent-text-color);
 }
+
+
 
 .main .left button a:hover{
     color: var(--accent-text-color) !important;
 }
 
 .main .right img{
-    width: 500px;
+    height: 550px;
 }
 
 .skills{
@@ -320,6 +343,10 @@ nav button#contactButton{
 
 .about .left img{
     width: 440px;
+}
+
+.about .right h3 strong{
+    color: var(--accent-color);
 }
 
 .about .right p{
@@ -500,6 +527,10 @@ footer .bottom p{
     font-size: 12px;
 }
 
+footer .bottom .links{
+    display: none;
+}
+
 footer .bottom .links a{
     font-size: 12px;
     margin-left: 14px;
@@ -522,6 +553,7 @@ footer .bottom .links a{
 
     .main .right img{
         width: 380px;
+        height: auto;
     }
 
     .skills p{
