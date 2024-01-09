@@ -1,4 +1,4 @@
-# ![](./assets/logo-fje.png){width=30px} Porfolio Personal Fran Espina
+# Porfolio Personal Fran Espina
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7604e853-3fd1-4451-a75c-29e9d9d1f679/deploy-status)](https://app.netlify.com/sites/fjespina/deploys)
 
 Código fuente de la pagina WEB que actualmente uso como portfolio personal.
