@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="icon" type="image/png" href="assets/favicon.png" alt="foto de Fran Espina en la playa">
     <title>Fran Espina</title>
 </head>
 <body>
@@ -17,74 +17,74 @@
             <a href="https:/linkedin.com/in/fjespina" target="_blank">Fj<span>Espina</span></a>
         </div>
         <ul class="nav-options">
-            <li><a href="#" onclick="hideMenu()">inicio</a></li>
-            <li><a href="#skills" onclick="hideMenu()">servicios</a></li>
-            <li><a href="#about" onclick="hideMenu()">yo</a></li>
-            <li><a href="#portfolio" onclick="hideMenu()">portfolio</a></li>
-            <li><a href="#feedback" onclick="hideMenu()">reseñas</a></li>
-            <li class="switch">
+            <li aria-label="Inicio"><a href="#" onclick="hideMenu()">inicio</a></li>
+            <li aria-label="Servicios"><a href="#skills" onclick="hideMenu()">servicios</a></li>
+            <li aria-label="Sovre mí"><a href="#about" onclick="hideMenu()">yo</a></li>
+            <li aria-label="Porfolio de proyectos"><a href="#portfolio" onclick="hideMenu()">portfolio</a></li>
+            <li aria-label="Reseñas"><a href="#feedback" onclick="hideMenu()">reseñas</a></li>
+            <li class="switch" aria-label="Intercambiar tema WEB">
                 <i class='bx bxs-moon' ></i>
                 <i class='bx bxs-sun' ></i>
             </li>
         </ul>
-        <button id="contactButton">Contáctame</button>
-        <button id="menuButton" onclick="openMenu()">
+        <button id="contactButton" aria-label="Contacto">Contáctame</button>
+        <button id="menuButton" aria-label="Menú" onclick="openMenu()">
             <i class='bx bx-menu'></i>
         </button>
     </nav>
 
-    <div class="main" id="main">
+    <section class="main" id="main">
         <div class="left">
             <h5>Hola, Soy Fran Espina</h5>
             <h3>Creo <span>productos</span> y resuelvo <span>problemas</span></h3>
             <p>Desarrollador senior <strong>backend</strong>, consultor tecnológico, y experto en <strong>.NET</strong>.</p>
             <p>Experiencia multisectorial en nóminas, recursos humanos, contabilidad, comercio electrónico, etc. Desarrollo integral de <strong>aplicaciones </strong> móviles multiplataforma... y además hago mis páginas web.</p>
             <div class="contact">
-                <a class="social-link" href="https://linkedin.com/in/fjespina" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a class="social-link" href="https://linkedin.com/in/fjespina" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
                 <p>Más de 20 años buscando <strong>soluciones</strong>. </p>
             </div>
-            <button>
+            <button aria-label="Enviar mail">
                 <i class='bx bx-envelope'></i>
-                <a href="mailto:francisco.espina.aragon@gmail.com">francisco.espina.aragon@gmail.com</a>
+                <a href="mailto:francisco.espina.aragon@gmail.com" aria-label="Enviar mail">francisco.espina.aragon@gmail.com</a>
             </button>
         </div>
-        <div class="right">
+        <figure class="right">
             <img src="assets/portada.jpg">
-        </div>
-    </div>
+        </figure>
+    </section>
 
-    <div class="skills" id="skills">
+    <section class="skills" id="skills">
         <h5>Algunos de mis servicios</h5>
         <h3>Seguro que podamos colaborar</h3>
         <p>Te dejo una esbozo de algunos de los servicios con las que me encuentro cómodo, pero siéntete libre de preguntar sobre otros escenarios, lenguajes y frameworks, tanto en backend como en frontend.</p>
         <div class="skill-items">
-            <div class="item">
+            <article class="item">
                 <div class="icon"><i class='bx bx-mobile' ></i></div>
                 <h4>Desarrollo móvil</h4>
                 <p>Desarrollo multiplataforma con Xamarin.Forms y <strong>.NET Maui</strong>. Desarrollo integral de backend en servidor, bases de datos, servicios e interfaz de usuario.</p>
-            </div>
-            <div class="item">
+            </article>
+            <article class="item">
                 <div class="icon"><i class='bx bx-desktop' ></i></div>
                 <h4>Desarrollo escritorio</h4>
                 <p>Aplicaciones de escritorio Windows Forms, WPF y/o UWP. Experiencia en arquitecturas cliente / servidor.</p>
-            </div>
-            <div class="item">
+            </article>
+            <article class="item">
                 <div class="icon"><i class='bx bx-directions'></i></div>
                 <h4>Integraciones corporativas</h4>
                 <p>Creación e implementación de interfaces para la comunicación de herramientas empresariales. Familiarizado con el uso de API REST. </p>
-            </div>
-            <div class="item">
+            </article>
+            <article class="item">
                 <div class="icon"><i class='bx bxs-book' ></i></div>
                 <h4>Formación</h4>
                 <p>Amplia experiencia como responsable de acciones formativas y actividad como docente. Gran capacidad comunicativa y motivadora.</p>
-            </div>
+            </article>
         </div>
-    </div>
+    </section>
 
-    <div class="about" id="about">
-        <div class="left">
-            <img src="assets/sobre-mi.jpg" alt="">
-        </div>
+    <section class="about" id="about">
+        <figure class="left">
+            <img src="assets/sobre-mi.jpg" alt="foto de Fran Espina con su perro paseando">
+        </figure>
         <div class="right">
             <h5>Sobre mí</h5>
             <h3>Motivado, dinámico y <strong>proactivo</strong></h3>
@@ -93,121 +93,121 @@
                  y también he sido <strong>autónomo</strong>. Durante estos años he conocido profesionales maravillosos de los que he intentado absorber lo mejor de todos de ellos.</p>
             <p>En mi tiempo libre me pierdo con mi bicleta MTB y siempre que puedo me gusta viajar y hacer turismo de playa o montaña. Aunque durante años deambulé por España ahora me encuentro de vuelta en mi ciudad natal, Cádiz.</p>
         </div>
-    </div>
+    </section>
 
-    <div class="portfolio" id="portfolio">
-        <div class="header">
+    <section class="portfolio" id="portfolio">
+        <hgroup class="header">
             <div class="info">
                 <h5>Proyectos recientes</h5>
                 <h3>Porfolio</h3>
             </div>
-            <button onClick="window.open('https://github.com/FranEspina/','_newtab');"><i class='bx bxl-github' ></i> Visita mi repositorio</button>
-        </div>
+            <button onClick="window.open('https://github.com/FranEspina/','_newtab');" aria-label="Repositorio GitHub"><i class='bx bxl-github' ></i> Visita mi repositorio</button>
+        </hgroup>
         <div class="portfolio-items">
-            <div class="item">
-                <img src="assets/sc-2.png">
+            <article class="item">
+                <img src="assets/sc-2.png" alt="imagen aplicación de venta de billetes">
                 <div class="info">
                     <h4>Aplicación Ticketing</h4>
                     <p>Aplicación móvil realizada integramente como maqueta para un proyecto con el metro de Quito. Gestión de usuarios locales y remotos, apertura y cierre de caja, venta de billetes, lecturas de tarjeta NFC, emisión de billetes PDF y códigos QR.</p>
                     <!-- <a href="#">Ver en GitHub <i class='bx bx-link-external'></i></a> -->
                 </div>
-            </div>
-            <div class="item">
-                <img src="assets/sc-3.jpg">
+            </article>
+            <article class="item">
+                <img src="assets/sc-3.jpg" alt="imagen de cliente API REST">
                 <div class="info">
                     <h4>Integración API REST con ERP</h4>
                     <p>Integración de ERP de recursos humanos y servicios con CheckJC, software del control horario, a través de las API REST facilitadas por CheckJC en su versión V3.1. Cliente de escritorio desarrollado en .NET y comunicaciones con ASP.NET Core.</p>
                     <!--<a href="#">Ver en GitHub <i class='bx bx-link-external' ></i></a>-->
                 </div>
-            </div>
-            <div class="item">
-                <img src="assets/sc-1.png">
+            </article>
+            <article class="item">
+                <img src="assets/sc-1.png" alt="imagen de código de esta WEB">
                 <div class="info">
                     <h4>Este Porfolio (HTML5, CSS)</h4>
                     <p>Portfolio personal. Página estática realizada con HTML5, estilada en CSS y con algún sencillo script en JS. Responsive y con selector de tema claro u oscuro.</p>
-                    <a href="https://github.com/FranEspina/static-portfolio" target="_blank">Ver en GitHub <i class='bx bx-link-external' ></i></a>
+                    <a href="https://github.com/FranEspina/static-portfolio" target="_blank" aria-label="Ver en GitHub">Ver en GitHub <i class='bx bx-link-external' ></i></a>
                 </div>
-            </div>
+            </article>
         </div>   
-    </div>
+    </section>
 
-    <div class="feedback" id="feedback">
+    <section class="feedback" id="feedback">
         <h5>Referencias de clientes</h5>
         <h3>Lo que opinan de mi !</h3>
         <div class="customers">
-            <div class="item" onClick="window.open('https://www.linkedin.com/in/eduardo-azagra-ezquerro-028ab526/','_newtab');">
-                <div class="rating">
+            <article class="item" onClick="window.open('https://www.linkedin.com/in/eduardo-azagra-ezquerro-028ab526/','_newtab');">
+                <hgroup class="rating" aria-label="Valoración cliente">
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
-                </div>
+                </hgroup>
                 <p>Francisco José es un excelente profesional, destaca por sus conocimientos técnicos y funcionales, su alto nivel de compromiso y su experiencia en diferentes proyectos complejos. Siempre ha sido muy enriquecedor trabajar a su lado con una gran capacidad de trabajo y profesionalidad, entusiasmo y capacidad de comunicación: Por último destacar su preocupación por la calidad y por las necesidades del cliente final.</p>
                 <div class="user">
-                    <img src="assets/customer-1.jpg">
+                    <img src="assets/customer-1.jpg" alt="foto perfil de Eduardo Azagra">
                     <div class="info">
                         <h5>Eduardo Azagra</h5>
                         <p>Estagiranet</p>
                     </div>
                 </div>
-            </div>
-            <div class="item" onClick="window.open('https://www.linkedin.com/in/lorenzo-mochales-gordo-3b4a721/','_newtab');">
-                <div class="rating">
+            </article>
+            <article class="item" onClick="window.open('https://www.linkedin.com/in/lorenzo-mochales-gordo-3b4a721/','_newtab');">
+                <hgroup class="rating" aria-label="Valoración cliente">
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
-                </div>
+                </hgroup>
                 <p>Poder colaborar con Fran es una suerte, ya que es una persona comprometida con el resultado del proyecto, tiene profundos conocimientos del sector (técnicos y funcionales), con las ideas muy claras, lo que facilita alcanzar acuerdos y lograr los objetivos por muy ambiciosos que sean. Desde el punto de vista personal, el ambiente que genera Fran a su alrededor crea un marco de trabajo óptimo para dar lo máximo posible.</p>
                 <div class="user">
-                    <img src="assets/customer-2.jpg">
+                    <img src="assets/customer-2.jpg" alt="fot perfil de Lorenzo Mochales">
                     <div class="info">
                         <h5>Lorenzo Mochales</h5>
                         <p>Seresco</p>
                     </div>
                 </div>
-            </div>
-            <div class="item" onClick="window.open('https://www.linkedin.com/in/fcampomanes/','_newtab');"">
-                <div class="rating">
+            </article>
+            <article class="item" onClick="window.open('https://www.linkedin.com/in/fcampomanes/','_newtab');"">
+                <hgroup class="rating" aria-label="Valoración cliente">
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
-                </div>
+                </hgroup>
                 <p>Fran es un excepcional profesional que siempre me ha transmitido seguridad en el trato como cliente. Ha buscado siempre una postura colaborativa y con una motivación clara de aportar soluciones a las diferentes situaciones que le he planteado. 
                     Su carácter conciliador y su capacidad de sufrimiento, lo combina con constancia y claridad a la hora de definir sus metas y los medios para alcanzarlas. </p>
                 <div class="user">
-                    <img src="assets/customer-3.jpg">
+                    <img src="assets/customer-3.jpg" alt="foto perfil de Fernando Campomanes">
                     <div class="info">
                         <h5>Fernando Campomanes</h5>
                         <p>Momentum Task Forces</p>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
-    </div>
+    </section>
 
     <footer>
         <div class="top">
             <div class="logo">
                 <img src="assets/logo-fje.png">
-                <a href="https://linkedin.com/in/fjespina">Fran Espina</a>
+                <a href="https://linkedin.com/in/fjespina" aria-label="LinkedIn">Fran Espina</a>
             </div>
             <ul>
-                <li><a href="https://www.canva.com/design/DAFwTGjpQes/quZoDoXJPSQr9o29TGHhIQ/view?utm_content=DAFwTGjpQes&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">cv</a></li>
-                <li><a href="/assets/Proyectos Freelance Fran Espina.pdf" target="_blank">proyectos</a></li>
+                <li><a href="https://www.canva.com/design/DAFwTGjpQes/quZoDoXJPSQr9o29TGHhIQ/view?utm_content=DAFwTGjpQes&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" aria-label="Curriculum en PDF" target="_blank">cv</a></li>
+                <li><a href="/assets/Proyectos Freelance Fran Espina.pdf" aria-label="Proyectos en PDF" target="_blank">proyectos</a></li>
             </ul>
             <div class="social-links">
-                <a href="https://linkedin.com/in/fjespina" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://linkedin.com/in/fjespina" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
             </div>
         </div>
         <div class="separator"></div>
         <div class="bottom">
             <p>
-                Hecho por Fran Espina
+                Hecho por mi -> Fran Espina :) 
             </p>
             <div class="links">
                 <a href="#">Política de privacidad</a>
