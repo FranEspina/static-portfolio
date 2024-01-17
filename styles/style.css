@@ -283,6 +283,10 @@ margin-top: 0px;
     margin-top: 20px;
 }
 
+.skills h3 strong{
+  color: var(--accent-color);
+}
+
 .skills .skill-items{
     display: flex;
     margin-top: 70px;
@@ -386,6 +390,7 @@ margin-top: 0px;
     display: flex;
     margin-top: 70px;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .portfolio .portfolio-items .item{
@@ -741,6 +746,10 @@ footer .bottom .links a{
             width: 100%;
         }
 
+        .about .right p{
+          font-size: 16px;
+      }
+
         .portfolio .header button{
             font-size: 12px;
             padding: 8px 14px;
@@ -749,6 +758,10 @@ footer .bottom .links a{
         .portfolio .portfolio-items .item{
             width: 90%;
         }
+
+        .feedback .customers .item p{
+          font-size: 16px;
+      }
 
         .feedback .customers .item{
             width: 100%;
@@ -796,16 +809,12 @@ footer .bottom .links a{
             font-size: 16px;
         }
 
-        .main .left p{
-            font-size: 14px;
-        }
-
         .main .left .social-link{
             font-size: 24px;
         }
 
         .main .left button{
-            font-size: 14px;
+            font-size: 15px;
         }
 
         .main .right img{
@@ -824,10 +833,6 @@ footer .bottom .links a{
             font-size: 16px;
         }
 
-        .skills p{
-            font-size: 14px;
-        }
-
         .about {
             padding: 65px 15px;
         }
@@ -840,9 +845,6 @@ footer .bottom .links a{
             font-size: 16px;
         }
 
-        .about .right p{
-            font-size: 14px;
-        }
 
         .portfolio {
             padding: 65px 15px;
@@ -862,6 +864,11 @@ footer .bottom .links a{
 
         .portfolio .portfolio-items .info{
             padding: 15px 25px 35px;
+            font-size: 15px;
+        }
+
+        .portfolio .portfolio-items .info p{
+          font-size: 15px;
         }
 
         .feedback {
@@ -881,7 +888,7 @@ footer .bottom .links a{
         }
 
         .feedback .customers .item p{
-            font-size: 12px;
+            font-size: 15px;
         }
 
         footer {
