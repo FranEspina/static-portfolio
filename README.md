@@ -3,16 +3,15 @@
 
 Código fuente de la pagina WEB que actualmente uso como portfolio personal.
 
-Actualmente permite acceder al respositorio GitHub, pero lastimosamente mis proyecto para cliente son privados y no puedo compartir el código.
+Actualmente permite acceder al respositorio GitHub, pero lastimosamente mis proyecto para cliente son privados y no puedo compartir el código. Estoy comenzando a migrar alguna prueba de concepto sobre tecnologías con las que trabajo o intento mantenerme al día.
 
-Para acceder a más detalles de mi perfil se puede contancar conmigo de diversas.
+Para acceder a más detalles de mi perfil puedes contancar conmigo de diversas, pero si prefieres puedes hacerlo por [email](francisco.espina.aragon@gmail.com).
 
 ## Algunos detalles
 Es una simple página HTML5, estilada con CSS y que usa apenas algunos scripts en JS sin usar ningún framework.
 
 La página es responsive, permite seleccionar entre tema claro y oscuro, usa HTML semántico y se ha intentado cuidar la accesibilidad.
 
-## Despliegues
 Con cada commit que se sube al repositorio a la rama master se despliega la aplicación al netlify.com.
 
 ## Encuéntrame en:
