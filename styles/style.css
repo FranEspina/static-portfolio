@@ -256,8 +256,6 @@ margin-top: 0px;
     color: var(--accent-text-color);
 }
 
-
-
 .main .left button a:hover{
     color: var(--accent-text-color) !important;
 }
@@ -372,7 +370,7 @@ margin-top: 0px;
 }
 
 .portfolio .header button{
-    background-color: var(--accent-secondary-color) ;
+    background-color: var(--accent-color);
     padding: 10px 20px;
     color: var(--accent-text-color);
     display: flex;
@@ -381,6 +379,14 @@ margin-top: 0px;
     gap: 8px;
     border: none;
     border-radius: 10px;
+}
+
+.main .left button a{
+  color: var(--accent-text-color);
+}
+
+.main .left button a:hover{
+  color: var(--accent-text-color) !important;
 }
 
 .portfolio .header button i{
