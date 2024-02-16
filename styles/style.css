@@ -410,6 +410,10 @@ margin-top: 0px;
     transition: all 0.3s ease;
 }
 
+.portfolio .portfolio-items .item-hidden{
+  display: none;
+}
+
 .portfolio .portfolio-items .item:hover{
     border-color: var(--accent-color);
 }
