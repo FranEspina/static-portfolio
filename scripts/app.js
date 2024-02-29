@@ -8,23 +8,24 @@ function updateSize() {
   var width = window.innerWidth;
 
   // Mostrar el alto y el ancho en el elemento
-  output.innerHTML = "Ancho: " +  width + "px. : Alto" + height + "px.";
+  output.innerHTML = "Ancho: " + width + "px. : Alto" + height + "px.";
 }
 
-function openMenu(){
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('open');
-}
-
-function hideMenu(){
+function openMenu() {
   const nav = document.querySelector('nav');
-  if (nav.classList.contains('open')){
+  nav.classList.toggle('open');
+}
+
+function hideMenu() {
+  const nav = document.querySelector('nav');
+  if (nav.classList.contains('open')) {
     nav.classList.toggle('open');
   }
 }
 
 // Llamar a la función cuando se carga la página
 updateSize();
+
 
 // Llamar a la función cuando se cambia el tamaño de la ventana
 window.addEventListener("resize", updateSize);
@@ -34,10 +35,16 @@ const switchMode = document.querySelector(".switch");
 switchMode.addEventListener("click", e => {
   switchMode.classList.toggle("active-dark");
 
-  if(switchMode.classList.contains("active-dark")){
+  if (switchMode.classList.contains("active-dark")) {
     document.documentElement.setAttribute("data-theme", "dark")
-  }else{
+  } else {
     document.documentElement.setAttribute("data-theme", "light")
   }
   hideMenu();
 });
+
+// Revisamos si cambiamos el tema al cargar la página
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  switchMode.classList.toggle("active-dark");
+  document.documentElement.setAttribute("data-theme", "dark")
+}
