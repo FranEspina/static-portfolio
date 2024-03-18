@@ -5,7 +5,7 @@ Código fuente de la pagina WEB que actualmente uso como portfolio personal.
 
 Actualmente permite acceder sólo a algunos de mis respositorios públicos en GitHub, pero lastimosamente mis proyecto para cliente son privados y no puedo compartir el código. Comparto algunas pruebas de concepto sobre tecnologías con las que trabajo o intento mantenerme al día.
 
-Para acceder a más detalles de mi perfil puedes contancar conmigo de diversas, pero si prefieres puedes hacerlo por email a través de mi dirección de correo: [francisco.espina.aragon@gmail.com](francisco.espina.aragon@gmail.com).
+Si necesitas más detalles de mi perfil no dudes en contactar conmigo. Puedes hacerlo a través de mis perfiles públics, pero posiblemente lo más rápido sea a través de mi dirección de correo electrónico: [francisco.espina.aragon@gmail.com](francisco.espina.aragon@gmail.com).
 
 ## Algunos detalles
 Es una simple página HTML5, estilada con CSS y que usa apenas algunos scripts en JS sin usar ningún framework.
